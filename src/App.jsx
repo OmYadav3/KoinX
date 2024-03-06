@@ -5,6 +5,7 @@ import BlueBox from "./components/BlueBox";
 import Performance from "./components/Performance";
 import Navbar1 from "./components/Navbar1";
 import Sentiment from "./components/Sentiment";
+import AboutPage from "./components/AboutPage";
 
 const App = () => {
   return (  
@@ -16,7 +17,7 @@ const App = () => {
         <div> Bitcoins</div>
       </div>
 
-      <div className="flex justify-center ml-[2rem] bg-zinc-50">
+      <div className="flex justify-center ml-[2rem] ">
         <div className="">
           <div>
             <BitcoinPriceChart />
@@ -29,9 +30,12 @@ const App = () => {
           <BlueBox />
         </div>
       </div>
-      <div className="ml-[6rem]">
+      <div className="ml-[4rem]">
         <Performance />
         <Sentiment/>
+      </div>
+      <div className="ml-[4rem] mt-6">
+        <AboutPage/>
       </div>
     </div>
   );

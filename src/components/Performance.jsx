@@ -1,10 +1,12 @@
+import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const Performance = () => {
   return (
     <div className="">
         
-      <div className="main border-2 my-8 rounded-lg w-[55rem]">
+      <div className="main border-2 my-8 rounded-lg w-[61rem]">
         <div className="PerFormance m-8 text-4xl font-semibold">Performance</div>
         <div className=" m-8">
           <div className="Low-High-bar flex justify-between items-center p-2">
@@ -33,8 +35,8 @@ const Performance = () => {
           </div>
           <div></div>
         </div>
-
-        <div className="text-2xl opacity-70 mx-8 my-4 font-semibold">Fundamentals</div>
+        
+        <div className="text-2xl opacity-70 mx-8 my-4 font-semibold">Fundamentals <FontAwesomeIcon className='ml-2' icon={faCircleInfo} /></div>
 
         <div className="grid grid-cols-2 gap-0 mx-8 my-2 ">
           <div className="Table-1  flex flex-col mr-4 ">

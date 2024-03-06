@@ -1,12 +1,14 @@
+import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const Sentiment = () => {
   return (
     <div>
-      <div className="main w-[55rem] border-2 p-4    rounded-lg">
+      <div className="main w-[61rem] border-2 p-6 rounded-lg">
         <div className="section-A font-semibold text-2xl opacity-70">Sentiment</div>
         <div className="section-B">
-          <div className="text-xl my-4 font-semibold opacity-70">Key Events</div>
+          <div className="text-xl my-4 font-semibold opacity-70">Key Events<FontAwesomeIcon className='ml-2' icon={faCircleInfo} /></div>
           <div className="colorboxes flex gap-4 ">
             <div className="blue w-[50%] bg-blue-50 rounded-lg p-4">
               <div className="flex gap-4 justify-center ">
@@ -48,7 +50,7 @@ const Sentiment = () => {
           </div>
         </div>
         <div className="section-C  my-4">
-        <div className="text-xl my-4 font-semibold opacity-70">Analyst Estimates</div>
+        <div className="text-xl my-4 font-semibold opacity-70">Analyst Estimates<FontAwesomeIcon className='ml-2' icon={faCircleInfo} /></div>
         <div className="flex items-center">
         <div className="percentage text-4xl  h-[10rem] w-[10rem] font-semibold bg-green-100 text-green-600 px-12 py-14 rounded-[50%] mx-6 my-6 ">
             76%
