@@ -6,6 +6,7 @@ import Performance from "./components/Performance";
 import Navbar1 from "./components/Navbar1";
 import Sentiment from "./components/Sentiment";
 import AboutPage from "./components/AboutPage";
+import Tokenomics from "./components/Tokenomics";
 
 const App = () => {
   return (  
@@ -13,7 +14,7 @@ const App = () => {
       <Navbar />
       <div className="ml-[2.5rem] p-2 mt-4 flex gap-2 justify-start ml-[6rem]">
         <span className="opacity-60">Cryptocurriences</span>
-         <div>>></div>
+         <div>&gt;&gt;</div>
         <div> Bitcoins</div>
       </div>
 
@@ -36,6 +37,9 @@ const App = () => {
       </div>
       <div className="ml-[4rem] mt-6">
         <AboutPage/>
+      </div>
+      <div className="ml-[4rem] mt-6">
+        <Tokenomics/>
       </div>
     </div>
   );
