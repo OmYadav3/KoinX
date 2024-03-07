@@ -48,7 +48,7 @@ const App = () => {
             </div>
           </div>
         <div className="right sm:mx-2 ">
-          <div className="lg:mr-2">
+          <div className="lg:mr-4">
             <BlueBox />
           </div>
         </div>

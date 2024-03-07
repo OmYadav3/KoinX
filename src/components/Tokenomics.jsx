@@ -14,11 +14,11 @@ const Tokenomics = () => {
             <div className="category flex flex-col gap-4 ml-4">
               <div className="flex gap-2 items-center">
                 <div className=" xs:h-4 h-2 xs:w-4 w-2 bg-blue-500 rounded-[50%]"></div>
-                <div className="xs:text-xl text-xs">Crowdsale investors: 80%</div>
+                <div className="sm:text-xl text-xs">Crowdsale investors: 80%</div>
               </div>
               <div className="flex gap-2 items-center">
                 <div className=" xs:h-4 h-2 xs:w-4 w-2 bg-orange-400 rounded-[50%]"></div>
-                <div className="xs:text-xl text-xs">Foundation: 20%</div>
+                <div className="sm:text-xl text-xs">Foundation: 20%</div>
               </div>
             </div>
           </div>

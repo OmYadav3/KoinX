@@ -32,7 +32,7 @@ const YouMayAlsoLike = () => {
           throw new Error("Failed to fetch data");
         }
         const jsonData = await response.json();
-        console.log(jsonData.coins, "sirji");
+        // console.log(jsonData.coins, "sirji");
         setGraphData(jsonData.coins);
       } catch (err) {
         console.error(err, "Error in fetching data");

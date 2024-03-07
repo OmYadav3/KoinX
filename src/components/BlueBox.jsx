@@ -19,7 +19,7 @@ const BlueBox = () => {
         if (jsonData?.coins?.length > 3) {
           jsonData.coins.splice(3);
         }
-        console.log(jsonData.coins, "sirji");
+        // console.log(jsonData.coins, "sirji");
         setCoinData(jsonData.coins);
       } catch (err) {
         console.error(err, "Error in fetching data");
@@ -59,7 +59,7 @@ const BlueBox = () => {
         </div>
 
         <div className=" w-full bg-white Trendingcoins rounded-lg p-4 ">
-          <div className="w-full section-A mb-8 mt-4 ml-12 text-2xl font-bold">
+          <div className=" section-A mb-8 mt-4 ml-12 text-2xl font-bold">
             Trending Coins (24h)
           </div>
           <div className="trending-coins w-full ">
