@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TradingViewWidget from "./TradingViewWidget";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const BitcoinPriceChart = () => {
+  const [viewport, setViewportWidth] = useState(false);
+
+  useEffect(() => {
+    
+    const handleResize = () => {
+      console.log(window.visualViewport.width, "omyadav");
+      setViewportWidth(
+        window.visualViewport ? window.visualViewport.width : window.innerWidth
+      );
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup function to remove the event listener
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className="">
-      <div className="main rounded-lg border-2 m-4 p-2 bg-white">
-        <div className="section-A flex items-center">
+    <div className="bg-white">
+      <div className="main rounded-lg border-2 sm:w-[60rem]   lg:w-[56rem] xl:w-[60rem]xs:m-4  bg-white   ">
+        {/* <div className="section-A flex items-center">
           <div className="max-w-44 min-w-44 mx-2">
             <img src="Bitcoin.png" alt="not found" />
           </div>
@@ -42,9 +61,29 @@ const BitcoinPriceChart = () => {
             <span className="hover:bg-green-200 p-2 px-4 rounded-lg ">1Y</span>
             <span className="hover:bg-green-200 p-2 px-4 rounded-lg ">ALL</span>
           </div>
+        </div> */}
+        <div className="section-D  sm:block  hidden  overflow-hidden">
+          <TradingViewWidget
+            symbol={"BITSTAMP:BTCUSD"}
+            height={725}
+            width={953}
+            // height={viewport>=375 ? 450 : 725}
+            // width={viewport>=375 ? 458: 940}
+            fontsize={12}
+            hideDateRanges={false}
+          />
         </div>
-        <div className="section-D w-full h-[30rem] select-none">
-          <TradingViewWidget />
+        
+        <div className="mobile sm:hidden  ">
+          <TradingViewWidget
+            symbol={"BITSTAMP:BTCUSD"}
+            height={350}
+            width={350}
+            // height={viewport>=375 ? 450 : 725}
+            // width={viewport>=375 ? 458: 940}
+            fontsize={6}
+            hideDateRanges={false}
+          />
         </div>
       </div>
     </div>

@@ -2,17 +2,17 @@ import React from 'react'
 
 const Navbar1 = () => {
   return (
-    <div>
-      <div className="flex gap-8 ">
-            <div className="text-xl hover:text-cyan-600 hover:underline"><a href="#">Overview</a></div>
-            <div className="text-xl hover:text-cyan-600 hover:underline"><a href="#">Fundamentals</a></div>
-            <div className="text-xl hover:text-cyan-600 hover:underline"><a href="#"> News Insights</a></div>
-            <div className="text-xl hover:text-cyan-600 hover:underline"><a href="#">Sentiments</a></div>
-            <div className="text-xl hover:text-cyan-600 hover:underline"><a href="#">Team</a></div>
-            <div className="text-xl hover:text-cyan-600 hover:underline"><a href="#">Techanicals</a></div>
-            <div className="text-xl hover:text-cyan-600 hover:underline"><a href="#">Tokenomics</a></div>
+    <div className=''>
+      <div className=" sm:block hidden md:flex mt-4 gap-8   ">
+            <div className=" w-max text-nowrap hover:text-cyan-600 hover:underline"><a href="#overview">Overview</a></div>
+            <div className=" w-max text-nowrap hover:text-cyan-600 hover:underline"><a href="#fundamentals">Fundamentals</a></div>
+            <div className=" w-max text-nowrap hover:text-cyan-600 hover:underline"><a href="#about"> News Insights</a></div>
+            <div className=" w-max text-nowrap hover:text-cyan-600 hover:underline"><a href="#sentiments">Sentiments</a></div>
+            <div className=" w-max text-nowrap hover:text-cyan-600 hover:underline"><a href="#team">Team</a></div>
+            <div className=" w-max text-nowrap hover:text-cyan-600 hover:underline"><a href="#technicals">Technicals</a></div>
+            <div className=" w-max text-nowrap hover:text-cyan-600 hover:underline"><a href="#tokenomics">Tokenomics</a></div>
         </div>
-        <hr className="mt-4 border-2 w-[56rem]"/>
+        <hr className="xs:mt-4 mt-2  lg:w-[56rem] "/>
     </div>
   )
 }

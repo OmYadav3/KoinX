@@ -4,8 +4,8 @@ import React from "react";
 
 const AboutPage = () => {
   return (
-    <div>
-      <div className="main p-6 border-2 w-[61rem] rounded-lg">
+    <div className='bg-white' id='about'>
+      <div className="main xs:p-6 p-2 border-2 lg:w-[60rem] rounded-lg">
         <div className="section-A text-3xl my-4 font-semibold">
           About Bitcoin
         </div>
@@ -55,23 +55,23 @@ const AboutPage = () => {
 
         <hr className="h-2 mx-2" />
 
-        <div className="section-D">
-          <h1 className="text-xl font-semibold ">Already Holding Bitcoin?</h1>
-          <div className="flex gap-4 h-[14rem] ">
-            <div className="card1 bg-gradient-to-r from-green-400 to-blue-400 border-2 rounded-lg my-4 flex items-center p-4">
-              <div className="logo min-w-40 max-w-40 p-2">
+        <div className="section-D h-max">
+          <h1 className="text-xl font-semibold mb-2 ">Already Holding Bitcoin?</h1>
+          <div className="flex flex-col sm:flex-row border-2 xs:gap-4 xs:h-max ">
+            <div className="card1 bg-gradient-to-r from-green-400 to-blue-400 border-2 rounded-lg  flex items-center xs:p-4">
+              <div className="logo min-w-10 xs:max-w-40 max-w-32 p-2">
                 <img
                   className="rounded-lg"
                   src="/illusration-handwithphone.png"
                   alt="#"
                 />
               </div>
-              <div className="ml-4">
-                <div className="text-3xl font-semibold pb-4 text-white">
+              <div className="xs:ml-4 ml-2">
+                <div className="xs:text-3xl text-lg font-semibold xs:pb-4 pb-2 text-white">
                   Calculate your Profits{" "}
                 </div>
                 <div>
-                  <button className="py-2 px-4 border-2 rounded-lg font-semibold bg-white">
+                  <button className="py-2 xs:px-4 px-2 text-xs border-2 rounded-lg font-semibold bg-white">
                     Check Now{" "}
                     <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
                   </button>
@@ -79,20 +79,20 @@ const AboutPage = () => {
               </div>
             </div>
 
-            <div className="card2 border-2 my-4 flex items-center rounded-lg p-4 bg-gradient-to-r from-orange-400 to-red-600">
-              <div className="logo min-w-40 max-w-40 p-2">
+            <div className="card2 border-2 flex items-center rounded-lg xs:p-4 bg-gradient-to-r from-orange-400 to-red-600">
+              <div className="logo min-w-10 xs:max-w-40 max-w-32  p-2">
                 <img
                   className="rounded-lg"
                   src="/illustration-phonewithinvestment.png"
                   alt="#"
                 />
               </div>
-              <div className="ml-4">
-                <div className="text-3xl font-semibold pb-4 text-white">
+              <div className="xs:ml-4 ml-2">
+                <div className="xs:text-3xl text-lg font-semibold xs:pb-4 pb-2 text-white">
                   Calculate your Profits{" "}
                 </div>
                 <div>
-                  <button className="py-2 px-4 border-2 rounded-lg bg-white font-semibold">
+                  <button className="py-2 xs:px-4 px-2 text-xs border-2 rounded-lg font-semibold bg-white">
                     Check Now{" "}
                     <FontAwesomeIcon className="ml-2" icon={faArrowRight} />{" "}
                   </button>
@@ -104,7 +104,7 @@ const AboutPage = () => {
 
         <hr className="h-2 m-2" />
 
-        <div className="section-E">
+        <div className="section-E text-sm ">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
             temporibus itaque. Voluptatem modi, vero veniam delectus ad aliquam
