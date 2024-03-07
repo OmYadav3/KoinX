@@ -31,8 +31,8 @@ const BlueBox = () => {
 
   return (
     <div>
-      <div className="bluebox w-max">
-        <div className="main lg:w-[24rem] bg-[#0052fe] mb-2 xs:p-12 p-6 text-white  rounded-lg flex flex-col justify-center items-center gap-6">
+      <div className="bluebox ">
+        <div className="main lg:w-[22rem] bg-[#0052fe] mb-2 xs:p-12 p-6 text-white  rounded-lg flex flex-col justify-center items-center gap-6">
           <div className="mobile flex xs:flex-col flex-col-reverse gap-2  ">
             <div className="first">
               <div className="section-A xs:text-2xl text-xl text-center font-[600]">
