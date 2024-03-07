@@ -47,8 +47,8 @@ const App = () => {
               <Team />
             </div>
           </div>
-        <div className="right sm:mx-4 xl:mx-2">
-          <div className="lg:mr-4">
+        <div className="right sm:mx-2 ">
+          <div className="lg:mr-2">
             <BlueBox />
           </div>
         </div>
