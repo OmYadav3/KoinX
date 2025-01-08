@@ -50,10 +50,10 @@ const BlueBox = () => {
             </div>
           </div>
 
-          <div className="section-D  border-2 text-lg text-blue-900 font-semibold bg-white xs:px-6 px-6 xs:py-2 py-2 rounded-lg">
+          <div className="section-D border-2 text-sm text-blue-900 font-semibold bg-white px-[0.3rem] py-[0.5rem]  rounded-lg">
             <button>
               Get Started for FREE{" "}
-              <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
+              <FontAwesomeIcon className="ml-1" icon={faArrowRight} />
             </button>
           </div>
         </div>
