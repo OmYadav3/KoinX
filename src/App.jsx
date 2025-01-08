@@ -25,7 +25,7 @@ const App = () => {
           <div className="left  ">
             <div className="flex justify-center">
               <div className=" flex flex-col justify-center items-center">
-                <div >
+                <div  className="">
                   <BitcoinPriceChart />
                 </div>
                 <div className="p-2 ">
@@ -47,8 +47,8 @@ const App = () => {
               <Team />
             </div>
           </div>
-        <div className="right sm:mx-2 ">
-          <div className="lg:mr-4">
+        <div className="right ">
+          <div className="">
             <BlueBox />
           </div>
         </div>

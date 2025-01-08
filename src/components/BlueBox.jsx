@@ -32,13 +32,13 @@ const BlueBox = () => {
   return (
     <div>
       <div className="bluebox ">
-        <div className="main lg:w-[22rem] bg-[#0052fe] mb-2 xs:p-12 p-6 text-white  rounded-lg flex flex-col justify-center items-center gap-6">
+        <div className="main lg:w-[14rem] bg-[#0052fe] mb-2 xs:p-6 p-6 text-white rounded-lg flex flex-col justify-center items-center gap-6">
           <div className="mobile flex xs:flex-col flex-col-reverse gap-2  ">
             <div className="first">
               <div className="section-A xs:text-2xl text-xl text-center font-[600]">
                 Get Started with koinX for FREE
               </div>
-              <div className="section-B text-center my-2 text-sm xs:text-lg">
+              <div className="section-B text-center my-2 text-sm xs:text-sm">
                 With our range of features that you can equip for free, KoinX
                 allow you to be more educated and aware of your tax reports{" "}
               </div>
@@ -50,7 +50,7 @@ const BlueBox = () => {
             </div>
           </div>
 
-          <div className="section-D  border-2 text-lg text-blue-900 font-semibold bg-white xs:px-8 px-6 xs:py-4 py-2 rounded-lg">
+          <div className="section-D  border-2 text-lg text-blue-900 font-semibold bg-white xs:px-6 px-6 xs:py-2 py-2 rounded-lg">
             <button>
               Get Started for FREE{" "}
               <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
@@ -58,8 +58,8 @@ const BlueBox = () => {
           </div>
         </div>
 
-        <div className=" w-full bg-white Trendingcoins rounded-lg p-4 ">
-          <div className=" section-A mb-8 mt-4 ml-12 text-2xl font-bold">
+        <div className=" w-full bg-white Trendingcoins rounded-lg p-[0.5rem] ">
+          <div className=" section-A mb-8 mt-4 ml-2 text-xl font-bold">
             Trending Coins (24h)
           </div>
           <div className="trending-coins w-full ">
@@ -74,10 +74,10 @@ const BlueBox = () => {
                 return (
                   <div
                     key={index}
-                    className="w-full flex justify-between p-4 items-center "
+                    className="w-full flex justify-between p-[0.5rem] items-center text-xs "
                   >
                     <div className="NSP flex gap-2 justify-center">
-                      <div className=" min-w-8 max-w-8">
+                      <div className=" min-w-6 max-w-6">
                         <img src={item.thumb} alt="" />
                       </div>
                       <div>{item.name}</div>

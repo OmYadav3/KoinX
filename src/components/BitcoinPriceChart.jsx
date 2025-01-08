@@ -65,8 +65,8 @@ const BitcoinPriceChart = () => {
         <div className="section-D  sm:block  hidden  overflow-hidden">
           <TradingViewWidget
             symbol={"BITSTAMP:BTCUSD"}
-            height={725}
-            width={953}
+            height={525}
+            width={753}
             // height={viewport>=375 ? 450 : 725}
             // width={viewport>=375 ? 458: 940}
             fontsize={12}
