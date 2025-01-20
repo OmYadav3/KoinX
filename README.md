@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Design preview of the koinX website](koinx-desktop.png)
+![Design preview of the koinX website](./public/koinx-desktop.png)
 
 ### Links
 
